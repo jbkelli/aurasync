@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log
+
+# Build files
+build/
+dist/
+
+# macOS
+.DS_Store

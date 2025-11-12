@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "AuraSync",
+    "slug": "AuraSync",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access microphone for the Aura Sync handshake."
+        }
+      ],
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "bluetoothPeripheralUsageDescription": "Allow Aura Sync to find nearby devices.",
+          "bluetoothAlwaysUsageDescription": "Allow Aura Sync to find nearby devices even when the app is in the background."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.kaseykel.AuraSync"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a97584a3-586b-4851-ae9c-db86b0e3bf04"
+      }
+    }
+  }
+}
